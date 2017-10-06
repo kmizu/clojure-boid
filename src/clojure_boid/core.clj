@@ -4,7 +4,11 @@
 
 (gen-class
   :name com.github.kmizu.BoidFrame 
-  :extends javax.swing.JFrame)
+  :extends javax.swing.JFrame
+  :prefix BoidFrame-)
+
+(defn BoidFrame-paint [this g]
+  (. g fillRect 0 0 100 100))
 
 (def frame (new com.github.kmizu.BoidFrame))
 (doto frame
