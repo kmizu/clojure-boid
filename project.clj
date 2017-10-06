@@ -4,6 +4,7 @@
   :license {:name "MIT LICENSE"
             :url "https://opensource.org/licenses/MIT"}
   :dependencies [[org.clojure/clojure "1.8.0"]]
-  :main ^:skip-aot clojure-boid.core
+  :aot [clojure-boid.core]
+  :main clojure-boid.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
